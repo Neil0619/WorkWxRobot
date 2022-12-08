@@ -1,0 +1,22 @@
+#日志路径
+log:
+  file:
+    path: ${LOG_PATH_JAVA:logs/robot}
+
+server:
+  port: 8390
+  maxHttpRequestHeaderSize: ${SERVER_MAX_HTTP_HEADER_SIZE:102400}
+  servlet:
+    context-path: /
+application-name: WorkWxRobot
+
+#Springboot 基础配置
+spring:
+  application:
+    name: WorkWxRobot
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+
+
